@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>pathfinding-tests - namesnotsteve Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="/index.html">Home</a></li>
+							<li><a href="https://github.com/namesnotsteve">GitHub</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Pathfinding Tests</h1>
+									</header>
+									<span class="image main"><img src="/images/projects/pathfinding-tests/pathfinding-tests-a-star-1.gif" alt="" /></span>
+									<h1>Pathfinding</h1>
+									<section>
+										<ul class="icons">
+											<li><a href="https://github.com/namesnotsteve/pathfinding-tests" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										</ul>
+									</section>
+									<p>Pathfinding is a very commonly found in games due to the need of allowing AI/NPCs to navigate the game world interactively. I originally had a go with using Unity's built-in navmesh pathfinding features as an introduction to pathfinding in a video game context. This got me interested in learning how these algorithms work and thus I began researching. </p>
+									<h2>Simple Pathfinding (Oct-2020)</h2>
+									<p>I originally created a very simple and brute force pathfinding algorithm which was very inefficient and not appropriate to use in an actual game project. This worked by simply evaluating every surrounding tile recursively and then following the tiles. The left image shows the evaluation process. The right image shows the path creation process where you find the recursively find the lowest cost tile.</p>
+									<img src="/images/projects/pathfinding-tests/pathfinding-tests-simple-1.gif" alt="Simple Pathfinding demo" />
+									<img src="/images/projects/pathfinding-tests/pathfinding-tests-simple-2.gif" alt="Simple Pathfinding demo" />
+									<h2>A* Pathfinding (Jan-2021)</h2>
+									<p>One of the most commonly used pathfinding algorithms is the A* algorithm. This is a very performant algorithm for finding the shortest paths. The high level of performance and relative simplicity allows for it to be a common choice among game developers and programmers.</p>
+									<img src="/images/projects/pathfinding-tests/pathfinding-tests-a-star-1.gif" alt="A* Pathfinding demo" />
+									<p>The image below demonstrates how you calculate the values for the algorithm. The green tiles are tiles in the OPEN list and blue tiles are in the CLOSED list. The red tile is the target.</p>
+									<ul type="square">
+										<li>q cost - Distance from the start node for the path</li>
+										<li>h cost - Distance from the target node</li>
+										<li>f cost - Total of g cost and h cost added together</li>
+									</ul>
+									<img src="/images/projects/pathfinding-tests/pathfinding-tests-a-star-3.gif" alt="A* Pathfinding demo" />
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="mailto:namesnotstevegames@gmail.com">namesnotstevegames@gmail.com</a>
+								</div>
+							</section>
+						</section>
+						<section class="split">
+							<section>
+								<h3>Social</h3>
+								<ul class="icons">
+									<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<li><a href="https://github.com/namesnotsteve/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://namesnotsteve.itch.io/" class="icon brands alt fa-itch-io"><span class="label">Itch.io</span></a></li>
+									<!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+								</ul>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="copyright">
+							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
