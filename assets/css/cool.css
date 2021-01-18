@@ -1,0 +1,26 @@
+.label
+{
+    border-radius: 50px;
+    background: #000000;
+    padding: 5px 5px;
+}
+.unitylabel
+{
+    background: #764ee4;
+}
+.csharplabel
+{
+    background: #a1599b;
+}
+.collegelabel
+{
+    background: #67cf4d;
+}
+.htmllabel
+{
+    background: #ed4b2f;
+}
+.csslabel
+{
+    background: #264de4;
+}
