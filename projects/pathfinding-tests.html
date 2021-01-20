@@ -72,7 +72,7 @@
 									<span class="image fit"><img src="/images/projects/pathfinding-tests/pathfinding-tests-comparison-1.png" alt="Me using unity profiler" alt="" /></span>
 									<p>All scenarios use RED as start and GREEN as target. </p>
 									<h3>Scenario 1</h3>
-									<span class="image"><img src="/images/projects/pathfinding-tests/pathfinding-tests-comparison-s1-1.png" alt="Scenario 1" /></span>
+									<span class="image left"><img src="/images/projects/pathfinding-tests/pathfinding-tests-comparison-s1-1.png" alt="Scenario 1" /></span>
 									<p>This scenaro showed that the A* algorithm was much faster however the simple algorithm still was a very fast speed. This difference was unnoticeable during gameplay. I believe that they are similar in this scenario because all the tiles that are walkable are part of the resulting path therefore the simple algorithm hasn't got to consider as many tiles. As a result, I decided to test how they'd behave on a more open map. </p>
 									<table>
 										<tr>
@@ -92,7 +92,7 @@
 										</tr>
 									</table>
 									<h3>Scenario 2</h3>
-									<span class="image"><img src="/images/projects/pathfinding-tests/pathfinding-tests-comparison-s2-1.png" alt="Scenario 1" /></span>
+									<span class="image left"><img src="/images/projects/pathfinding-tests/pathfinding-tests-comparison-s2-1.png" alt="Scenario 1" /></span>
 									<p>This scenario kept the 10x10 map size but opened up the level a bit more. The A* algorithm still performed very quickly while the simple algorithm showed a rise in length of time taken. This makes sense since the program is considering and evaluating a much larger amount of tiles than before. Although there is a large chunk of the map which is completely covered off, which isn't evaluated as a result and so that will reduce the amount of time taken.</p>
 									<table>
 										<tr>
@@ -112,7 +112,7 @@
 										</tr>
 									</table>
 									<h3>Scenario 3</h3>
-									<span class="image"><img src="/images/projects/pathfinding-tests/pathfinding-tests-comparison-s3-1.png" alt="Scenario 1" /></span>
+									<span class="image left"><img src="/images/projects/pathfinding-tests/pathfinding-tests-comparison-s3-1.png" alt="Scenario 1" /></span>
 									<p>This scenario increased the map size by 4 to 20x20 and ensured that no sections were cut off. This showed a significant increase in time taken for each implementation with 'simple' having the worst time taken. These times are especially bad when you consider the fact that, in these implementations, they are running in the main game thread. This results in the game freezing for that duration which would disrupt the player's gameplay. Pathfinding algorithms are fairly simple to run in a seperate thread due to the fact it simply just takes some inputs and creates an output. </p>
 									<table>
 										<tr>
